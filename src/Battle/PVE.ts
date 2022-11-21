@@ -3,22 +3,22 @@ import Battle from './Battle';
 
 export default class PVE extends Battle {
   private _player: Fighter;
-  private _environment: (SimpleFighter | Fighter)[];
+  private _environment: SimpleFighter[];
 
-  constructor(player: Fighter, monster: (SimpleFighter | Fighter)[]) {
+  constructor(player: Fighter, monster: SimpleFighter[]) {
     super(player);
     this._player = player;
     this._environment = monster;
   }
 
   fight(): number {
-    if (this._player.lifePoints !== -1
-      || this._environment.some((env) => env.lifePoints !== -1)) {
+    while (this._player.lifePoints > 0
+      && this._environment.some((env) => env.lifePoints > 0)) {
       this._environment.map((env) => this._player.attack(env));
 
       this._environment.map((env) => env.attack(this._player));
     }
 
-    return this._player.lifePoints === -1 ? -1 : 1;
+    return super.fight();
   }
 }
