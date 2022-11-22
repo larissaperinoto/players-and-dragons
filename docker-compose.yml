@@ -6,7 +6,7 @@ services:
     # Imagem base do container
     image: node:16
     # Nome do container para facilitar execução
-    container_name: trybers_and_dragons
+    container_name: players_and_dragons
     # Mesmo que `docker run -t`
     tty: true
     # Mesmo que `docker run -i`
