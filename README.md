@@ -4,7 +4,7 @@ A [Trybe](https://www.betrybe.com/) é uma escola de tecnologia com foco em form
 
 ## Objetivo
 
-Players and Dragons é um projeto para praticar os príncipios SOLID com a Programaao Orientada a Objetos (POO) onde simulamos um jogo de interpretação de papéis como um RPG  (Role Playing Game). 
+Players and Dragons é um projeto para praticar os príncipios SOLID com a Programação Orientada a Objetos (POO) onde é simulado um jogo de interpretação de papéis como um RPG  (Role Playing Game). 
 
 ## Tecnologias e Ferramentas
 <div>
@@ -14,7 +14,7 @@ Players and Dragons é um projeto para praticar os príncipios SOLID com a Progr
 
 <br>
 
-Na elaboração da API RESTful utilizou-se a arquitetura **Model-Service-Controller(MSC)**, além das seguintes ferramentas:
+Na elaboração deste projeto utilizou-se as seguintes ferramentas:
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [Docker](https://www.docker.com/)
